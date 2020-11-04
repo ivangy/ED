@@ -1,0 +1,21 @@
+package ejercicio_1;
+
+import java.util.Scanner;
+
+public class ejercicio6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1;
+		
+		Scanner leer = new Scanner(System.in);
+		num1 = leer.nextInt();
+		if(num1<0) {
+			System.out.println("ERROR");
+		}else {
+			System.out.println("El cuadrado es: " + (num1*num1));
+			System.out.println("La raiz cuadrada es: " + Math.sqrt(num1));
+		}
+	}
+
+}
