@@ -1,5 +1,6 @@
 package Ahorcado;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class CodigoAhorcado {
@@ -15,6 +16,7 @@ public class CodigoAhorcado {
 		for (int i = 0; i<20;i++) {
 			System.out.println();
 		}
+		
 		System.out.println("       +-----------+");
 		System.out.println("       |gracias por|");
 		System.out.println("   O <-|salbarme   |");
@@ -95,7 +97,7 @@ public class CodigoAhorcado {
 			System.out.print(vFallo[i]);
 		}
 		
-		//información de las vidas que le queda
+		//informaciï¿½n de las vidas que le queda
 		if (vidas==1) {
 			System.out.println("");
 			System.out.println("Le quedan " + vidas + " vida");
@@ -106,7 +108,7 @@ public class CodigoAhorcado {
 		return vidas;
 	}
 
-	//lo he llamado muneco por q nose si java acepta la ñ
+	//lo he llamado muneco por q nose si java acepta la ï¿½
 	public static void muneco(int vidas) {
 		switch (vidas+1) {
 		
@@ -166,11 +168,21 @@ public class CodigoAhorcado {
 		}
 	}
 
+	public static String azar(String palabra) {
+		Random azar = new Random();
+		String[] vpalabra= {"hola","adios","perro", "gato", "hockey", "tennis", "chapa", "confeti", "azar","murcielago","humanidad","saltamontes","yegua","montaÃ±a","reproducciÃ³n","especie","matrimonio","familia","cabeza","pierna","persona"};
+		int i=azar.nextInt(vpalabra.length)+1;
+		palabra=vpalabra[i];
+		return palabra;
+	}
+	
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);
 
-		// Escribes la palabra y te da su silueta
-		String palabra = leer.next();
+		//String palabra = leer.next();
+		String palabra = " ";
+		palabra=azar(palabra);
+		
 		String letra;
 		int vidas = 7;
 		String vAcierto[], vFallo[];
