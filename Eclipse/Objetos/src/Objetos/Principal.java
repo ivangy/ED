@@ -12,6 +12,10 @@ public class Principal {
 		hola.cumpleAnos();
 		hola.ponerVacuna();
 		System.out.println(hola.toString());
+		
+		hola.cumpleAnos();
+		hola.ponerVacuna();
+		System.out.println(hola.toString());
 	}
 
 }

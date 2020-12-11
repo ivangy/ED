@@ -11,4 +11,6 @@
     <fullyQualifiedTypeName name="sun.security.util.Length"/>
     <fullyQualifiedTypeName name="Examen_Ivan_Sanchez.Ejercicios"/>
     <fullyQualifiedTypeName name="Objetos.Perro"/>
+    <fullyQualifiedTypeName name="Juego.Juego"/>
+    <fullyQualifiedTypeName name="jdk.swing.interop.SwingInterOpUtils"/>
 </qualifiedTypeNameHistroy>
