@@ -4,13 +4,13 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="javax.management.modelmbean.ModelMBeanNotificationBroadcaster"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.String"/>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="sun.security.util.Length"/>
     <fullyQualifiedTypeName name="Examen_Ivan_Sanchez.Ejercicios"/>
     <fullyQualifiedTypeName name="Objetos.Perro"/>
-    <fullyQualifiedTypeName name="Juego.Juego"/>
     <fullyQualifiedTypeName name="jdk.swing.interop.SwingInterOpUtils"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="Juego.Juego"/>
 </qualifiedTypeNameHistroy>

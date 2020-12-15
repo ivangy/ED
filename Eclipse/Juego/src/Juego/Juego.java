@@ -10,6 +10,15 @@ public class Juego {
 		record = 0;
 		multiplataforma = false;
 	}
+	
+
+	public Juego(String nombre, boolean multiplataforma) {
+		super();
+		this.nombre = nombre;
+		this.multiplataforma = multiplataforma;
+	}
+
+
 
 	public String getNombre() {
 		return nombre;
