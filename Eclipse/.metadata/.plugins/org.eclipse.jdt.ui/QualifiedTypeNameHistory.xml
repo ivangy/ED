@@ -10,10 +10,12 @@
     <fullyQualifiedTypeName name="Examen_Ivan_Sanchez.Ejercicios"/>
     <fullyQualifiedTypeName name="Objetos.Perro"/>
     <fullyQualifiedTypeName name="jdk.swing.interop.SwingInterOpUtils"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="Juego.Juego"/>
     <fullyQualifiedTypeName name="jdk.jfr.internal.PrivateAccess"/>
     <fullyQualifiedTypeName name="Principal.Contacto"/>
     <fullyQualifiedTypeName name="Principal.Agenda"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Horas"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
