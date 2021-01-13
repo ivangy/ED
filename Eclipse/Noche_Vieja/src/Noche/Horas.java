@@ -10,10 +10,16 @@ public class Horas {
 		min = horas.substring(3,5);
 	}
 
-	public int getHoras() {
+	public String getHoras() {
 		int intHoras;
-		intHoras=Integer.valueOf(horas)*60;
-		return intHoras;
+		String strigHoras;
+		String nada="";
+		intHoras=1440-((Integer.valueOf(horas)* 60) + (Integer.valueOf(min)));
+		if (horas.equals("00") && min.equals("00")) {
+			return nada;
+		}
+		strigHoras= intHoras + "";
+		return strigHoras;
 	}
 
 
