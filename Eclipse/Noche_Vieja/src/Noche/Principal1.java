@@ -1,9 +1,12 @@
 package Noche;
 
 import java.util.Scanner;
-
-public class Principal1 {
-
+/**
+ * 
+ * @author daw-B
+ *
+ */
+public class Principal1 {	
 	public static void main(String[] args) {
 		Horas vHoras[] = new Horas[10];
 		Scanner leer = new Scanner(System.in);
