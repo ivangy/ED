@@ -1,5 +1,7 @@
 package Modulo;
 
+import java.util.Scanner;
+
 public class Modulo {
 	private String nombre;
 	private String codigo;
@@ -37,7 +39,7 @@ public class Modulo {
 
 	@Override
 	public String toString() {
-		return nombre + ", codigo=" + codigo + ", horas=" + horas;
+		return nombre + ", codigo=" + codigo + ", horas=" + horas + "\n";
 	}
 
 }
