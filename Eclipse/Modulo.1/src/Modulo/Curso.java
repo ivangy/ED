@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Curso {
 	private String nombre;
 	private String tutor;
-	private Modulo vModulo[];
+	private static Modulo vModulo[];
 
 	public Curso(String nombre, String tutor) {
 		this.nombre = nombre;
@@ -14,12 +14,12 @@ public class Curso {
 		this.vModulo = new Modulo[7];
 	}
 
-	public void nuevoModulo() {
+	public static void nuevoModulo() {
 		Scanner leer = new Scanner(System.in);
 		String nueModulo = "";
 		String nueCodigo = "";
 		int nueHoras = 0;
-		// int totalHoras = 0;
+		int totalHoras = 0;
 
 		System.out.println("Dime el nombre del nuevo modulo:");
 		nueModulo = leer.next();
@@ -30,7 +30,7 @@ public class Curso {
 		for (int i = 0; i < vModulo.length; i++) {
 			if (vModulo[i] == null) {
 				vModulo[i] = new Modulo(nueModulo, nueCodigo, nueHoras);
-				// totalHoras = totalHoras + nueHoras;
+				totalHoras = totalHoras + nueHoras;
 				break;
 			}
 		}
@@ -38,16 +38,8 @@ public class Curso {
 			System.out.println("\n");
 		}
 	}
+	
 
-	public int totalHoras() {
-		int suma = 0;
-		for (Modulo m : vModulo) {
-			if (m != null) {
-				suma += m.getHoras();
-			}
-		}
-		return suma;
-	}
 
 	public String getNombre() {
 		return nombre;
@@ -85,5 +77,6 @@ public class Curso {
 		}
 		return nombre + ", tutor=" + tutor + "\n" + dato + "\n";
 	}
+
 
 }
