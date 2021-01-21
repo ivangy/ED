@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 INDEX VERSION 1.131+C:\Users\IVANGY123\Desktop\ED\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
 2435563157.index
 1561130155.index
@@ -23,3 +24,26 @@ INDEX VERSION 1.131+C:\Users\IVANGY123\Desktop\ED\Eclipse\.metadata\.plugins\org
 3134443602.index
 255151787.index
 48391806.index
+=======
+INDEX VERSION 1.131+/home/dawb/Escritorio/ED/Eclipse/.metadata/.plugins/org.eclipse.jdt.core
+4261871016.index
+235751099.index
+404046261.index
+3989989687.index
+1546887822.index
+695846378.index
+2341359817.index
+2988695846.index
+1653174412.index
+367066093.index
+1253456589.index
+1081264688.index
+1919982705.index
+414344523.index
+3609131211.index
+4057046083.index
+2676582400.index
+570665952.index
+2956430948.index
+3242803733.index
+>>>>>>> Stashed changes
