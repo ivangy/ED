@@ -11,7 +11,7 @@ public class Curso {
 	public Curso(String nombre, String tutor) {
 		this.nombre = nombre;
 		this.tutor = tutor;
-		this.vModulo = new Modulo[7];
+		this.vModulo = new Modulo[10];
 	}
 
 	public void nuevoModulo() {
@@ -47,6 +47,15 @@ public class Curso {
 			}
 		}
 		return suma;
+	}
+	
+	public void elliminar() {
+		
+		for (Modulo m : vModulo) {
+			if (m != null) {
+				System.out.println(m.toString());
+			}
+		}
 	}
 
 	public String getNombre() {

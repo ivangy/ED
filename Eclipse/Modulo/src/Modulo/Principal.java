@@ -12,7 +12,8 @@ public class Principal {
 			System.out.println("1- Anadir un nuevo modulo");
 			System.out.println("2- Ver todos los modulos");
 			System.out.println("3- Ver horas del curso");
-			System.out.println("4- Salir");
+			System.out.println("4- Eliminar modulo");
+			System.out.println("5- Salir");
 			try {
 				opc = leer.nextInt();
 			} catch (Exception e) {
@@ -49,6 +50,10 @@ public class Principal {
 
 				break;
 			case 4:
+				c.elliminar();
+
+				break;
+			case 5:
 				cond = 1;
 
 				break;
