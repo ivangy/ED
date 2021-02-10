@@ -17,7 +17,6 @@ public class Coche {
 	public Coche(String nomPiloto, int dorsal) {
 		this.nomPiloto = nomPiloto;
 		this.dorsal = dorsal;
-		this.disCarrera = 500;
 		this.estadoCoche = "PARADO";
 		this.potencia = 50;
 		this.velocidad = 0;
@@ -25,11 +24,12 @@ public class Coche {
 	}
 	
 	public void arrancar() {
-		switch(getEstadoCoche()) {
+		switch(getEstadoCoche().toUpperCase()) {
 		case "MARCHA":
 			System.out.println("Ya esta arrancado");
 			break;
 		case "PARADO":
+			System.out.println("Has arrancado");
 			setEstadoCoche("MARCHA");
 			break;
 		case "ACCIDENTADO":
@@ -41,23 +41,7 @@ public class Coche {
 		}
 	}
 	
-	public void rearrancar() {
-		switch(getEstadoCoche()) {
-		case "MARCHA":
-			System.out.println("Ya esta arrancado");
-			break;
-		case "PARADO":
-			setEstadoCoche("Solo tines que arrancar, no tienes que rearrancar");
-			break;
-		case "ACCIDENTADO":
-			setEstadoCoche("MARCHA");
-			System.out.println("Ya estas en marcha, acelera");
-			break;
-		case "TERMINADO":
-			System.out.println("Ya has acabado la carrera");
-			break;
-		}
-	}
+
 	
 	public void acelerar() {
 		switch(getEstadoCoche()) {
@@ -76,6 +60,7 @@ public class Coche {
 			
 			if(kilomRecorridos>=disCarrera){
 				System.out.println("Has acabado la carrera");
+				setEstadoCoche("Terminado");
 			}else {
 				System.out.println("Te faltan " + (getDisCarrera()-getkilomRecorridos()) + "Km para acabar");
 			}
@@ -121,10 +106,26 @@ public class Coche {
 			System.out.println("Ya has acabado la carrera");
 			break;
 		}
+		
 	}
 	
-	
-	
+	public void rearrancar() {
+		switch(getEstadoCoche()) {
+		case "MARCHA":
+			System.out.println("Ya esta arrancado");
+			break;
+		case "PARADO":
+			System.out.println("Solo tines que arrancar, no tienes que rearrancar");
+			break;
+		case "ACCIDENTADO":
+			System.out.println("Ya estas en marcha, acelera");
+			setEstadoCoche("MARCHA");
+			break;
+		case "TERMINADO":
+			System.out.println("Ya has acabado la carrera");
+			break;
+		}
+	}
 	
 	
 	
@@ -160,7 +161,7 @@ public class Coche {
 	}
 
 	public void setEstadoCoche(String estadoCoche) {
-		this.estadoCoche = estadoCoche;
+		this.estadoCoche = estadoCoche.toUpperCase();
 	}
 
 	public int getPotencia() {
