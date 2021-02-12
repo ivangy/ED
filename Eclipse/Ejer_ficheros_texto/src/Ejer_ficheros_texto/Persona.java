@@ -15,14 +15,14 @@ public class Persona {
 
 	public String mostrarConpuntos(int longLinea) {
 		int punto;
-		String añadirPunto = "";
+		String anadirPunto = "";
 		String nombreBn;
 
 		punto = (longLinea - apellido.length() - nombre.length() - String.valueOf(nip).length());
 		for (int i = 0; i < punto; i++) {
-			añadirPunto = añadirPunto + ".";
+			anadirPunto = anadirPunto + ".";
 		}
-		nombreBn = (apellido + ", " + nombre + " " + añadirPunto + nip);
+		nombreBn = (apellido + ", " + nombre + " " + anadirPunto + nip);
 		return nombreBn;
 	}
 

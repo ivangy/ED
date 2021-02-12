@@ -54,61 +54,63 @@ public class IODatos {
 				System.out.println(vPersona[i].mostrarConpuntos(longitudLinea));
 		}
 	}
-	
+
 	public static void CrearArchivo() {
-	        try {
-	        	Scanner leer=new Scanner(System.in);
-	        	Persona vPersona[] = leerArchivo();
-	            System.out.println("Dime el nombre del nuevo fichero");
-	        	String ruta = leer.next();
-	        	ruta=ruta+".txt";
-	            File file = new File(ruta);
-	            if (!file.exists()) {
-	                file.createNewFile();
-		            PrintWriter writer = new PrintWriter(ruta);
-					for (int i = 0; i < vPersona.length; i++) {
-						
-						if (vPersona[i] != null) {
-							
-							writer.println(vPersona[i].mostrarConpuntos(100));
-					}}
-		            writer.close();
-		            
-					}else {
-	            	System.out.println("error el archivo ya esta creado y no puedes machacarlo");
-	            }
-	            
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-	    }
+		try {
+			Scanner leer = new Scanner(System.in);
+			Persona vPersona[] = leerArchivo();
+			System.out.println("Dime el nombre del nuevo fichero");
+			String ruta = leer.next();
+			ruta = ruta + ".txt";
+			File file = new File(ruta);
+			FileWriter fw = new FileWriter(file, true);
+			PrintWriter writer = new PrintWriter(fw);
+			if (!file.exists()) {
+				file.createNewFile();
+			} else {
+				
+				for (int i = 0; i < vPersona.length; i++) {
+
+					if (vPersona[i] != null) {
+
+						writer.println(vPersona[i].mostrarConpuntos(100));
+
+					}
+				}
+				writer.close();
+				fw.close();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	public static String buscar() {
 		Scanner leer = new Scanner(System.in);
 		Persona vPersonas[] = leerArchivo();
-		boolean encontrado=false;
-		String nombreEncontrado="";
-		int busqueda=0;
-		
+		boolean encontrado = false;
+		String nombreEncontrado = "";
+		int busqueda = 0;
+
 		System.out.println("dime el nip que quieres buscar");
 		busqueda = leer.nextInt();
-	
-	
+
 		for (int i = 0; i < vPersonas.length; i++) {
-			if (vPersonas[i]!=null && busqueda==vPersonas[i].getNip()) {
-				nombreEncontrado+=("Apellido:"+vPersonas[i].getApellido()+" Nombre:"+vPersonas[i].getNombre());
-				encontrado=true;
+			if (vPersonas[i] != null && busqueda == vPersonas[i].getNip()) {
+				nombreEncontrado += ("Apellido:" + vPersonas[i].getApellido() + " Nombre:" + vPersonas[i].getNombre());
+				encontrado = true;
 			}
 		}
-		
-		if (encontrado==false) {
-			nombreEncontrado="No se ha encontrado nadie con ese nip";
+
+		if (encontrado == false) {
+			nombreEncontrado = "No se ha encontrado nadie con ese nip";
 		}
-		
+
 		return nombreEncontrado;
 	}
-	
+
 	public static void escribir(String nombreFichero) {
-		
+
 	}
 }

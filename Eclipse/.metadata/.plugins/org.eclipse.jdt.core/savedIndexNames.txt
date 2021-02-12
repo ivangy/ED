@@ -1,40 +1,6 @@
-<<<<<<< Updated upstream
-INDEX VERSION 1.131+C:\Users\IVANGY123\Desktop\ED\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
-926903710.index
-1031926027.index
-886340798.index
-3188079155.index
-2131516773.index
-156419638.index
-2492338677.index
-2925432089.index
-3096158120.index
-3134443602.index
-1507947013.index
-574729431.index
-48391806.index
-1361776612.index
-3459336426.index
-2193274449.index
-2441910891.index
-1319616866.index
-1759123908.index
-2435563157.index
-1561130155.index
-3247676214.index
-595998494.index
-1257041519.index
-3976571001.index
-3818532959.index
-3920315277.index
-2468396192.index
-1017318380.index
-422303663.index
-255151787.index
-=======
 INDEX VERSION 1.131+/home/dawb/Escritorio/ED/Eclipse/.metadata/.plugins/org.eclipse.jdt.core
 2341359817.index
-1919982705.index
+545635485.index
 2676582400.index
 570665952.index
 1081264688.index
@@ -52,16 +18,16 @@ INDEX VERSION 1.131+/home/dawb/Escritorio/ED/Eclipse/.metadata/.plugins/org.ecli
 2129388381.index
 2925157912.index
 3813412165.index
+177622949.index
 3609131211.index
 1653174412.index
 695846378.index
 1000151974.index
+3242803733.index
 3975974068.index
 367066093.index
 1546887822.index
-3242803733.index
 3989989687.index
 3701775838.index
+1919982705.index
 414344523.index
-545635485.index
->>>>>>> Stashed changes

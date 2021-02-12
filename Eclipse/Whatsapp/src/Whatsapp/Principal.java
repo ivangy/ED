@@ -3,8 +3,10 @@ package Whatsapp;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		String vMensaje[]=new String[10];
+		
+		//Mensaje.transformarMensaje("", "");
+		IODatos.mostrar(null, 10);
 	}
 
 }

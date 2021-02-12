@@ -25,6 +25,7 @@ public class Principal {
 	public static void main(String[] args) {
 		Scanner leer= new Scanner(System.in);
 		int opc=0;
+	//	Persona vPersonas[] = IODatos.leerArchivo();
 		do {
 			
 			switch (pintaMenu()) {
