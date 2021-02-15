@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="Examen_Ivan_Sanchez.Ejercicios"/>
     <fullyQualifiedTypeName name="Objetos.Perro"/>
     <fullyQualifiedTypeName name="jdk.swing.interop.SwingInterOpUtils"/>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="Juego.Juego"/>
     <fullyQualifiedTypeName name="jdk.jfr.internal.PrivateAccess"/>
     <fullyQualifiedTypeName name="Principal.Contacto"/>
@@ -16,7 +15,6 @@
     <fullyQualifiedTypeName name="Horas"/>
     <fullyQualifiedTypeName name="com.sun.java.swing.action.NextAction"/>
     <fullyQualifiedTypeName name="Noche.Horas"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="Modulo.Modulo"/>
     <fullyQualifiedTypeName name="Modulo.Principal"/>
     <fullyQualifiedTypeName name="Modulo.Curso"/>
@@ -27,8 +25,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="Ejer_ficheros_texto.Persona"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
@@ -36,4 +32,13 @@
     <fullyQualifiedTypeName name="Ejer_ficheros_texto.IODatos"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="Whatsapp.IODatos"/>
+    <fullyQualifiedTypeName name="Encriptado.IODatos"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="Encriptado.Root"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
 </qualifiedTypeNameHistroy>
