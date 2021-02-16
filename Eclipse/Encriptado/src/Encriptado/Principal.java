@@ -28,7 +28,7 @@ public class Principal {
 				
 				switch (pintaMenu()) {
 				case 1: {
-					IODatos.CrearArchivo();
+					IODatos.crearArchivo();
 					break;
 				}
 				case 2: {

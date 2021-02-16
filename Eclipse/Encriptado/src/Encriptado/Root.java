@@ -21,7 +21,7 @@ public class Root {
 			try {
 				fw = new FileWriter(file, true);
 			} catch (IOException e) {
-				// TODO Bloque catch generado automáticamente
+				// TODO Bloque catch generado automï¿½ticamente
 				e.printStackTrace();
 			}
 		PrintWriter writer = new PrintWriter(fw);
@@ -29,7 +29,7 @@ public class Root {
 		for (int i = 0; i < mensaje.length(); i++) {
 			String letra = mensaje.substring(i, i + 1);
 			letra=letra.toLowerCase();
-			if(letra.equals("a")||letra.equals("b")||letra.equals("c")||letra.equals("d")||letra.equals("e")||letra.equals("f")||letra.equals("g")||letra.equals("h")||letra.equals("i")||letra.equals("j")||letra.equals("k")||letra.equals("l")||letra.equals("m")||letra.equals("n")||letra.equals("ñ")||letra.equals("o")||letra.equals("p")||letra.equals("q")||letra.equals("r")||letra.equals("s")||letra.equals("t")||letra.equals("u")||letra.equals("v")||letra.equals("w")||letra.equals("x")||letra.equals("y")||letra.equals("z")) {
+			if(letra.equals("a")||letra.equals("b")||letra.equals("c")||letra.equals("d")||letra.equals("e")||letra.equals("f")||letra.equals("g")||letra.equals("h")||letra.equals("i")||letra.equals("j")||letra.equals("k")||letra.equals("l")||letra.equals("m")||letra.equals("n")||letra.equals("ï¿½")||letra.equals("o")||letra.equals("p")||letra.equals("q")||letra.equals("r")||letra.equals("s")||letra.equals("t")||letra.equals("u")||letra.equals("v")||letra.equals("w")||letra.equals("x")||letra.equals("y")||letra.equals("z")) {
 			int root=rot;
 			switch (letra) {
 			case "a": {root+=1;break;}
@@ -46,7 +46,7 @@ public class Root {
 			case "l": {root+=12;break;}
 			case "m": {root+=13;break;}
 			case "n": {root+=14;break;}
-			case "ñ": {root+=15;break;}
+			case "Ã±": {root+=15;break;}
 			case "o": {root+=16;break;}
 			case "p": {root+=17;break;}
 			case "q": {root+=18;break;}
@@ -84,7 +84,7 @@ public class Root {
 			case 12: {letra = "l";break;}
 			case 13: {letra = "m";break;}
 			case 14: {letra = "n";break;}
-			case 15: {letra = "ñ";break;}
+			case 15: {letra = "Ã±";break;}
 			case 16: {letra = "o";break;}
 			case 17: {letra = "p";break;}
 			case 18: {letra = "q";break;}
@@ -107,7 +107,7 @@ public class Root {
 		try {
 			fw.close();
 		} catch (IOException e) {
-			// TODO Bloque catch generado automáticamente
+			// TODO Bloque catch generado automaticamente
 			e.printStackTrace();
 		}System.out.println(" ");
 	}
@@ -120,7 +120,7 @@ public class Root {
 			try {
 				fw = new FileWriter(file, true);
 			} catch (IOException e) {
-				// TODO Bloque catch generado automáticamente
+				// TODO Bloque catch generado automaticamente
 				e.printStackTrace();
 			}
 		PrintWriter writer = new PrintWriter(fw);
@@ -128,7 +128,7 @@ public class Root {
 		try {
 			fr=new FileReader (ruta+".txt");
 		} catch (FileNotFoundException e2) {
-			// TODO Bloque catch generado automáticamente
+			// TODO Bloque catch generado automaticamente
 			e2.printStackTrace();
 		}
 		BufferedReader br = new BufferedReader(fr);
@@ -138,13 +138,13 @@ public class Root {
 		try {
 			mensaje = br.readLine();
 		} catch (IOException e1) {
-			// TODO Bloque catch generado automáticamente
+			// TODO Bloque catch generado automaticamente
 			e1.printStackTrace();
 		}
 		for (int i = 0; i < mensaje.length(); i++) {
 			String letra = mensaje.substring(i, i + 1);
 			letra=letra.toLowerCase();
-			if(letra.equals("a")||letra.equals("b")||letra.equals("c")||letra.equals("d")||letra.equals("e")||letra.equals("f")||letra.equals("g")||letra.equals("h")||letra.equals("i")||letra.equals("j")||letra.equals("k")||letra.equals("l")||letra.equals("m")||letra.equals("n")||letra.equals("ñ")||letra.equals("o")||letra.equals("p")||letra.equals("q")||letra.equals("r")||letra.equals("s")||letra.equals("t")||letra.equals("u")||letra.equals("v")||letra.equals("w")||letra.equals("x")||letra.equals("y")||letra.equals("z")) {
+			if(letra.equals("a")||letra.equals("b")||letra.equals("c")||letra.equals("d")||letra.equals("e")||letra.equals("f")||letra.equals("g")||letra.equals("h")||letra.equals("i")||letra.equals("j")||letra.equals("k")||letra.equals("l")||letra.equals("m")||letra.equals("n")||letra.equals("ï¿½")||letra.equals("o")||letra.equals("p")||letra.equals("q")||letra.equals("r")||letra.equals("s")||letra.equals("t")||letra.equals("u")||letra.equals("v")||letra.equals("w")||letra.equals("x")||letra.equals("y")||letra.equals("z")) {
 			int root=rot;
 			switch (letra) {
 			case "a": {root-=1;break;}
@@ -161,7 +161,7 @@ public class Root {
 			case "l": {root-=12;break;}
 			case "m": {root-=13;break;}
 			case "n": {root-=14;break;}
-			case "ñ": {root-=15;break;}
+			case "Ã±": {root-=15;break;}
 			case "o": {root-=16;break;}
 			case "p": {root-=17;break;}
 			case "q": {root-=18;break;}
@@ -201,7 +201,7 @@ public class Root {
 			case -12: {letra = "l";break;}
 			case -13: {letra = "m";break;}
 			case -14: {letra = "n";break;}
-			case -15: {letra = "ñ";break;}
+			case -15: {letra = "Ã±";break;}
 			case -16: {letra = "o";break;}
 			case -17: {letra = "p";break;}
 			case -18: {letra = "q";break;}
@@ -227,7 +227,7 @@ public class Root {
 		try {
 			fw.close();
 		} catch (IOException e) {
-			// TODO Bloque catch generado automáticamente
+			// TODO Bloque catch generado automaticamente
 			e.printStackTrace();
 		}System.out.println(" ");
 	}
