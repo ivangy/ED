@@ -50,4 +50,6 @@
     <fullyQualifiedTypeName name="Password.Password"/>
     <fullyQualifiedTypeName name="jdk.nio.zipfs.ZipFileSystemProvider"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="AgentesTIA.Agente007"/>
+    <fullyQualifiedTypeName name="IODatos.IODatos"/>
 </qualifiedTypeNameHistroy>
