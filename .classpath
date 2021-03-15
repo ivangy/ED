@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Eclipse/Agenda/src"/>
+	<classpathentry kind="src" path="Eclipse/Agenda2.0/src"/>
+	<classpathentry kind="src" path="Eclipse/AgendaFicheros/src"/>
+	<classpathentry kind="src" path="Eclipse/Ahorcado/src"/>
+	<classpathentry kind="src" path="Eclipse/Almacen de bebidas/src"/>
+	<classpathentry kind="src" path="Eclipse/Almacén de bebidas/src"/>
+	<classpathentry kind="src" path="Eclipse/Carrera_ivan/src"/>
+	<classpathentry kind="src" path="Eclipse/Ejer_ficheros_texto/src"/>
+	<classpathentry kind="src" path="Eclipse/ejercicio_1/src"/>
+	<classpathentry kind="src" path="Eclipse/Ejercicio_ficheros_binarios/src"/>
+	<classpathentry kind="src" path="Eclipse/Encriptado/src"/>
+	<classpathentry kind="src" path="Eclipse/Examen_ivan_sanchez/src"/>
+	<classpathentry kind="src" path="Eclipse/Examen_sanchez_ivan.zip_expanded/Examen_ivan_sanchez/src"/>
+	<classpathentry kind="src" path="Eclipse/Fichero/src"/>
+	<classpathentry kind="src" path="Eclipse/Hola mundo/src"/>
+	<classpathentry kind="src" path="Eclipse/Juego/src"/>
+	<classpathentry kind="src" path="Eclipse/Modulo.1/src"/>
+	<classpathentry kind="src" path="Eclipse/Modulo/src"/>
+	<classpathentry kind="src" path="Eclipse/Noche_Vieja/src"/>
+	<classpathentry kind="src" path="Eclipse/Objetos/src"/>
+	<classpathentry kind="src" path="Eclipse/Password/src"/>
+	<classpathentry kind="src" path="Eclipse/Realizacion_de_pruebas/src"/>
+	<classpathentry kind="src" path="Eclipse/Whatsapp/src"/>
+	<classpathentry kind="output" path="Eclipse/Agenda/bin"/>
+</classpath>
