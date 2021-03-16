@@ -50,5 +50,18 @@
     <fullyQualifiedTypeName name="Ejercicio_ficheros_binarios.Ventas"/>
     <fullyQualifiedTypeName name="Ejercicio_ficheros_binarios.IODatos"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+<<<<<<< Updated upstream
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+=======
+    <fullyQualifiedTypeName name="AgentesTIA.AgenteJefazo"/>
+    <fullyQualifiedTypeName name="AgentesTIA.Agente007"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="IODatos.IODatos"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+>>>>>>> Stashed changes
 </qualifiedTypeNameHistroy>
