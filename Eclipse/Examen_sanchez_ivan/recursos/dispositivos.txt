@@ -1,0 +1,9 @@
+pc-01;Dpto Informatica;1000;no;Windows 10;sobremesa
+pc-02;Aula1 informatica;1500;no;Windows 10;portatil
+Servidor-01;Cuarto Servidores RAM;5000;no;Ubuntu Server 14.04;2015
+Servidor-02;Cuarto Servidores LOSCOS;4000;si;Windows Server 2020;2020
+Impresora-01;Secretaria;300;no;toner
+Impresora-02;Electricidad;500;si;toner
+Impresora-03;Automacion;100;no;tinta
+pc-03;Aula1 informatica;1500;no;Ubuntu 18.04;portatil
+pc-04;Aula1 informatica;1500;no;Linux Mint;portatil
