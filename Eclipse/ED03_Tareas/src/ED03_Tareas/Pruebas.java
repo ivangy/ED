@@ -18,6 +18,7 @@ class Pruebas {
 			c.ingresar(a);
 			assertEquals(c.estado(), 800);
 		} catch (Exception e) {
+			fail();
 			System.out.println("Algo tienes mal");
 		}
 	}
@@ -31,9 +32,10 @@ class Pruebas {
 		//resultado esperado = Rojo
 		CCuenta c = new CCuenta("hola", "miCuenta", 600, 0);
 		try {
-			c.ingresar(a);
+			c.ingresar(-10);
 			assertEquals(c.estado(), 100);
 		} catch (Exception e) {
+			assertTrue(true);
 			System.out.println("Algo tienes mal");
 		}
 	}
