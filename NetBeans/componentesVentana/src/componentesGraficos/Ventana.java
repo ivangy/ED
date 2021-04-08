@@ -21,6 +21,11 @@ public class Ventana extends javax.swing.JFrame {
         vDatos= new ArrayList<>();
     }
 
+    public Ventana(ArrayList<String> datos) {
+        initComponents();
+        this.vDatos=datos;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,11 +35,19 @@ public class Ventana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanelDatosUsuario = new javax.swing.JPanel();
         jTextFieldTelefono = new javax.swing.JTextField();
         jTextFieldNombreUsuario = new javax.swing.JTextField();
         jButtonGuardarDatosUsuario = new javax.swing.JButton();
+        jSpinnerEdad = new javax.swing.JSpinner();
+        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jRadioButtonDerecha = new javax.swing.JRadioButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextAreaDatosUsuario = new javax.swing.JTextArea();
+        jRadioButtonIzquierda = new javax.swing.JRadioButton();
+        jButtonCambiarPantalla = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("ejemplos componentes");
@@ -42,6 +55,7 @@ public class Ventana extends javax.swing.JFrame {
         setResizable(false);
 
         jPanelDatosUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Datos Usuarios"));
+        jPanelDatosUsuario.setMaximumSize(new java.awt.Dimension(150, 150));
 
         jTextFieldTelefono.setText("Telefono");
         jTextFieldTelefono.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -64,20 +78,26 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 13)); // NOI18N
+        jLabel1.setText("   Edad:");
+        jLabel1.setToolTipText("");
+
         javax.swing.GroupLayout jPanelDatosUsuarioLayout = new javax.swing.GroupLayout(jPanelDatosUsuario);
         jPanelDatosUsuario.setLayout(jPanelDatosUsuarioLayout);
         jPanelDatosUsuarioLayout.setHorizontalGroup(
             jPanelDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelDatosUsuarioLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanelDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextFieldNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(71, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelDatosUsuarioLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonGuardarDatosUsuario)
                 .addContainerGap())
+            .addGroup(jPanelDatosUsuarioLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanelDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextFieldNombreUsuario)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSpinnerEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldTelefono))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
         jPanelDatosUsuarioLayout.setVerticalGroup(
             jPanelDatosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -86,7 +106,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addComponent(jTextFieldNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextFieldTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSpinnerEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
                 .addComponent(jButtonGuardarDatosUsuario)
                 .addContainerGap())
         );
@@ -98,6 +122,31 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(jRadioButtonDerecha);
+        jRadioButtonDerecha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jRadioButtonDerechaMouseClicked(evt);
+            }
+        });
+
+        jTextAreaDatosUsuario.setColumns(20);
+        jTextAreaDatosUsuario.setRows(5);
+        jScrollPane1.setViewportView(jTextAreaDatosUsuario);
+
+        buttonGroup1.add(jRadioButtonIzquierda);
+        jRadioButtonIzquierda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jRadioButtonIzquierdaMouseClicked(evt);
+            }
+        });
+
+        jButtonCambiarPantalla.setText("Ventana 2");
+        jButtonCambiarPantalla.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonCambiarPantallaMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -105,19 +154,34 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanelDatosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(379, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jRadioButtonIzquierda)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jRadioButtonDerecha)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(103, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonCambiarPantalla)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanelDatosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jRadioButtonDerecha)
+                    .addComponent(jRadioButtonIzquierda)
+                    .addComponent(jPanelDatosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButtonCambiarPantalla))
                 .addContainerGap())
         );
 
@@ -141,25 +205,103 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldTelefonoFocusGained
 
     private void jButtonGuardarDatosUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonGuardarDatosUsuarioMouseClicked
-        String nombre, telefono;
+        
         nombre = jTextFieldNombreUsuario.getText();
         telefono= jTextFieldTelefono.getText();
+        edad= (int) jSpinnerEdad.getValue();
         
-        vDatos.add(nombre);
-        vDatos.add(telefono);
+        vDatos.add(nombre + " " + edad + " -------------- " + telefono);   
+        
         
         jTextFieldNombreUsuario.setText("Nombre Usuario");
         jTextFieldTelefono.setText("Telefono");
         
         JOptionPane.showMessageDialog(this, "Datos guardados");
         
+        mostrarDatosGuardados();
+        
         /*Component c[]= jPanelDatosUsuario.getComponents();
         for (Component component : c) {
             component.setEnabled(false);
         }*/
         
-        jPanelDatosUsuario.setVisible(false);
+        //jPanelDatosUsuario.setVisible(false);
     }//GEN-LAST:event_jButtonGuardarDatosUsuarioMouseClicked
+
+    private void jRadioButtonIzquierdaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButtonIzquierdaMouseClicked
+        if(jRadioButtonIzquierda.isSelected()==true){
+            
+            //jTextAreaDatosUsuario.setVisible(false);
+            
+            Component c[]= jPanelDatosUsuario.getComponents();
+            for (Component component : c) {
+                component.setEnabled(false);
+            }
+        }
+        if(jRadioButtonIzquierda.isSelected()==false){
+            
+            //jTextAreaDatosUsuario.setVisible(true);
+            
+            Component c[]= jPanelDatosUsuario.getComponents();
+            for (Component component : c) {
+                component.setEnabled(true);
+            }
+        }
+         if(jRadioButtonDerecha.isSelected()==true){
+           
+            //jTextAreaDatosUsuario.setVisible(false);
+        
+            jTextAreaDatosUsuario.setEnabled(false);
+            
+        }
+        if(jRadioButtonDerecha.isSelected()==false){
+            
+            //jTextAreaDatosUsuario.setVisible(true);
+            
+            jTextAreaDatosUsuario.setEnabled(true);
+        }
+    }//GEN-LAST:event_jRadioButtonIzquierdaMouseClicked
+
+    private void jRadioButtonDerechaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButtonDerechaMouseClicked
+        if(jRadioButtonIzquierda.isSelected()==true){
+            
+            //jTextAreaDatosUsuario.setVisible(false);
+            
+            Component c[]= jPanelDatosUsuario.getComponents();
+            for (Component component : c) {
+                component.setEnabled(false);
+            }
+        }
+        if(jRadioButtonIzquierda.isSelected()==false){
+            
+            //jTextAreaDatosUsuario.setVisible(true);
+            
+            Component c[]= jPanelDatosUsuario.getComponents();
+            for (Component component : c) {
+                component.setEnabled(true);
+            }
+        }
+         if(jRadioButtonDerecha.isSelected()==true){
+           
+            //jTextAreaDatosUsuario.setVisible(false);
+        
+            jTextAreaDatosUsuario.setEnabled(false);
+            
+        }
+        if(jRadioButtonDerecha.isSelected()==false){
+            
+            //jTextAreaDatosUsuario.setVisible(true);
+            
+            jTextAreaDatosUsuario.setEnabled(true);
+        }
+    }//GEN-LAST:event_jRadioButtonDerechaMouseClicked
+
+    private void jButtonCambiarPantallaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonCambiarPantallaMouseClicked
+
+        Ventana2 v = new Ventana2(vDatos);
+        v.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButtonCambiarPantallaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -195,13 +337,32 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
     }
-
+        String nombre, telefono;
+        int edad;
     private ArrayList<String> vDatos;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonCambiarPantalla;
     private javax.swing.JButton jButtonGuardarDatosUsuario;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanelDatosUsuario;
+    private javax.swing.JRadioButton jRadioButtonDerecha;
+    private javax.swing.JRadioButton jRadioButtonIzquierda;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSpinner jSpinnerEdad;
+    private javax.swing.JTextArea jTextAreaDatosUsuario;
     private javax.swing.JTextField jTextFieldNombreUsuario;
     private javax.swing.JTextField jTextFieldTelefono;
     // End of variables declaration//GEN-END:variables
+
+    private void mostrarDatosGuardados() {
+        String texto = "";
+        for (String d : vDatos) {
+            if(d!=null){
+                texto = texto + d + "\n";
+            }
+        }
+        jTextAreaDatosUsuario.setText(texto);
+    }
 }
