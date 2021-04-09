@@ -51,7 +51,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel2.setText("Contraseña");
 
-        jLabelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Login/pizza.png"))); // NOI18N
+        jLabelFoto.setIcon(new javax.swing.ImageIcon("/home/dawb/Escritorio/ED/NetBeans/Inicio/IMG/pizza.png")); // NOI18N
 
         jLabel3.setText("jLabel3");
 
@@ -60,11 +60,12 @@ public class Login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(246, Short.MAX_VALUE)
+                .addGap(179, 179, 179)
+                .addComponent(jLabelFoto)
+                .addGap(0, 155, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButtonEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(270, 270, 270))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -74,14 +75,11 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jPasswordFieldContrasenaUsu, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextFieldUsuario, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBoxRecordarme, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jCheckBoxRecordarme, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonEntrar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(78, 78, 78)
                         .addComponent(jLabel3)
                         .addGap(124, 124, 124))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(179, 179, 179)
-                .addComponent(jLabelFoto)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,15 +100,26 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jCheckBoxRecordarme)
                 .addGap(12, 12, 12)
                 .addComponent(jButtonEntrar)
-                .addGap(65, 65, 65))
+                .addGap(89, 89, 89))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonEntrarMouseClicked
-        if(jTextFieldUsuario.equals("admin") && jPasswordFieldContrasenaUsu.equals("admin")){
-            jLabel3.setText(jPasswordFieldContrasenaUsu.get);
+        String usu = jTextFieldUsuario.getText(),passw="";
+        char[] pass = jPasswordFieldContrasenaUsu.getPassword();
+       
+        for (char p : pass) {
+            passw+=p;
+        }
+       
+        if(usu.equals("admin") && passw.equals("1234")){
+            Inicio i = new Inicio(usu);
+            i.setVisible(true);
+            this.dispose();
+        }else{
+            jLabel3.setText("ERROR");
         }
     }//GEN-LAST:event_jButtonEntrarMouseClicked
 
