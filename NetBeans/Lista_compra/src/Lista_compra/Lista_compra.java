@@ -142,8 +142,8 @@ public class Lista_compra extends javax.swing.JFrame {
 
     private void jTextFieldBuscarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldBuscarKeyReleased
        
-        DefaultListModel<String> mbus = new DefaultListModel<>();
-        int fin, f;
+       DefaultListModel<String> mbus = new DefaultListModel<>();
+       int fin, f;
        fin = mCompra.size();
        String busca= jTextFieldBuscar.getText();
         for (int i = 0; i < fin; i++) {
